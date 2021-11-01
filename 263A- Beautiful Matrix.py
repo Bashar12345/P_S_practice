@@ -22,3 +22,25 @@
 # এবং j-th-এর সংযোগস্থলে অবস্থিত। 
 # কলাম এটা নিশ্চিত যে ম্যাট্রিক্সে 24টি শূন্য এবং একটি একক সংখ্যা রয়েছে।
 
+matrix=[]
+
+#row
+for i in range(5):
+    a =[]
+    # column
+    for j in range(0,5):
+        a.append(int(input()))
+    matrix.append(a)
+
+# one-liner logic to take input for rows and columns
+#matrix = [[int(input()) for x in range (5)] for y in range(5)]
+
+
+for x in range(0,5):
+    if 1 in matrix[x]:
+        
+    print(matrix[x])
+    #for matrix[x][y] in matrix[x]:
+    for y in range(0,5):
+        print(matrix[x][y],end=" ")
+    print('\n')
