@@ -37,9 +37,8 @@ for i in range(5):
 
 
 for x in range(0,5):
-    if 1 in matrix[x]:
-        
-    print(matrix[x])
+    if 1 in matrix[x]:   
+      print(matrix[x])
     #for matrix[x][y] in matrix[x]:
     for y in range(0,5):
         print(matrix[x][y],end=" ")
