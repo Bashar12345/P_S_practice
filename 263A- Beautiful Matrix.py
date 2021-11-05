@@ -24,22 +24,61 @@
 
 matrix=[]
 
-#row
-for i in range(5):
-    a =[]
-    # column
-    for j in range(0,5):
-        a.append(int(input()))
-    matrix.append(a)
+# #row
+# for i in range(5):
+#     a =[]
+#     # column
+#     for j in range(0,5):
+#         a.append(int(input()))
+#     matrix.append(a)
+
+matrix=[[0,0,0,0,1],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]
+#print(matrix)
 
 # one-liner logic to take input for rows and columns
 #matrix = [[int(input()) for x in range (5)] for y in range(5)]
 
 
+# for x in range(0,5):
+#  for i in matrix[x]:
+#     if 1 in matrix[x]:
+#         print(i)
+print(len(matrix)//2)
+
 for x in range(0,5):
     if 1 in matrix[x]:   
-      print(matrix[x])
+        print(matrix[x].index(1))
+        locate_mid = matrix[x].index(1)
+        col = abs((len(matrix)//2) - locate_mid)
+        print('col',col)
+        row=abs(x-locate_mid)
+        print('row',row)
+        sort=row+col
+        print("row-",x," ",matrix[x])
+        print(sort)     
     #for matrix[x][y] in matrix[x]:
+    
     for y in range(0,5):
         print(matrix[x][y],end=" ")
     print('\n')
+
+
+# a=[int(x) for x in input().split()]
+# b=[int(x) for x in input().split()]
+# c=[int(x) for x in input().split()]
+# d=[int(x) for x in input().split()]
+# e=[int(x) for x in input().split()]
+
+# if sum(a)!=0:
+#     x,y=1,a.index(1)+1
+# elif sum(b)!=0:
+#     x,y=2,b.index(1)+1
+# elif sum(c)!=0:
+#     x,y=3,c.index(1)+1
+# elif sum(d)!=0:
+#     x,y=4,d.index(1)+1
+# else:
+#     x,y=5,e.index(1)+1
+
+# r,c=3,3
+# print(abs(x-r)+abs(c-y))
