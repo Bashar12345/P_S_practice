@@ -75,3 +75,5 @@ print(l)
 
 l = lowercase5('asasGRHSs')
 print(l)
+
+#   5 are different
