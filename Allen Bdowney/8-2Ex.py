@@ -1,7 +1,7 @@
 fruit ='banana'
 print(fruit.count('a'))
 
-String Methods
+"""String Methods
 
 Strings implement all of the common sequence operations, along with the additional methods described below.
 
@@ -478,4 +478,4 @@ The uppercasing algorithm used is described in section 3.13 of the Unicode Stand
 
 str.zfill(width)
 
-Return a copy of the string left filled with ASCII '0' digits to make a string of length width. A leading sign prefix('+'/'-') is handled by inserting the padding after the sign character rather than before. The original string is returned if width is less than or equal to len(s).
+Return a copy of the string left filled with ASCII '0' digits to make a string of length width. A leading sign prefix('+'/'-') is handled by inserting the padding after the sign character rather than before. The original string is returned if width is less than or equal to len(s)."""
