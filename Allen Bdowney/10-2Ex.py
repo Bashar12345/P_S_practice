@@ -1,6 +1,5 @@
 t=[1,2,3,4,5,6]
 
-
 def cumsum(t):
     new_list=[]
     index = 0
@@ -22,5 +21,18 @@ def middle(t):
     new_list=t[1:len(t)-1]
     return new_list
 
+
+def chop(t):
+    #new_list = t.pop(int(len(t)-1))
+    del t[len(t)-1]
+    del t[0]
+    #new_list= new_list.pop(0)
+    return t
+
+
+#Ex 10-4
+print(chop(t))
+#Ex 10-3
 print(middle(t))
+#Ex 10-2
 print(cumsum(t))
