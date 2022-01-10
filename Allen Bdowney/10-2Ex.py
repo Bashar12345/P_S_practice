@@ -1,4 +1,5 @@
 t=[1,2,3,4,5,6]
+m=['a','c','d']
 
 def cumsum(t):
     new_list=[]
@@ -17,6 +18,8 @@ def cumsum(t):
         else:
             new_list.append(t[i])
     return new_list
+
+
 def middle(t):
     new_list=t[1:len(t)-1]
     return new_list
@@ -29,7 +32,37 @@ def chop(t):
     #new_list= new_list.pop(0)
     return t
 
+def is_sorted(t):
+    i=0
+    while i != len(t)-1:
+       if t[i]>t[i+1]:
+          r= False
+          break
+       else:
+           r = True
+       i += 1
+    return r
 
+def is_anagram(word1,word2):
+    r=bool()
+    if len(word1)==len(word2):
+        for letter in word1:
+            if letter not in word2:
+                r=False
+                break
+    else:
+       return False
+    if r:
+        return False
+    else:
+        return True    
+
+    
+                  
+#Ex 10-6
+print(is_anagram('race','care'))
+#Ex 10-5 
+print(is_sorted(m))
 #Ex 10-4
 print(chop(t))
 #Ex 10-3
