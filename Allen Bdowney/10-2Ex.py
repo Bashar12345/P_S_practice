@@ -106,15 +106,7 @@ def count_matches(num_students, num_simulations):
     return count
 
 
-def main():
-    """Runs the birthday simulation and prints the number of matches."""
-    num_students = 23
-    num_simulations = 1000
-    count = count_matches(num_students, num_simulations)
 
-    print('After %d simulations' % num_simulations)
-    print('with %d students' % num_students)
-    print('there were %d simulations with at least one match' % count)
 
 
 # def has_duplicates(d_list):
@@ -133,6 +125,16 @@ def main():
 #     else:
 #         return False
 
+#Ex 10-8
+def main():
+    """Runs the birthday simulation and prints the number of matches."""
+    num_students = 23
+    num_simulations = 1000
+    count = count_matches(num_students, num_simulations)
+
+    print('After %d simulations' % num_simulations)
+    print('with %d students' % num_students)
+    print('there were %d simulations with at least one match' % count)
 
 # Ex 10-7
 print(has_duplicates(d))
